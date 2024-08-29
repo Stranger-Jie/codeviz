@@ -59,18 +59,20 @@ int Data::file_count(const std::filesystem::path file)
 
     while (std::getline(file_stream, line))
     {
-        line_count++;
+        int start = 0;
+        while(line[start] == ' ') start++;
         if (line.size() == 0)
         {
             FileData[relative_path].blank++;
         }
-        else if (line.find("//") == 0 || line.find("/*") == 0)
+        else if (line.find("//") == start || line.find("/*") == start)
         {
             FileData[relative_path].comment++;
         }
         else
         {
             FileData[relative_path].code++;
+            line_count++;
         }
     }
 

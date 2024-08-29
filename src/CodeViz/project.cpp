@@ -29,7 +29,6 @@ void Project::code_count()
         if (this->file_count(file.path()) == 0)
         {
             count_files++;
-            std::cout << file.path() << std::endl;
         }
     }
     // std::cout << "exist " << count_files << " files" << std::endl;
