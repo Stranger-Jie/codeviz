@@ -13,10 +13,10 @@ public:
     std::vector<std::string> IGNORE_DIR = Data::IGNORE_DIR;
 
 public:
-    Project(){};
+    Project() {};
     Project(const std::string &ROOT_DIR);
 
-    ~Project(){};
+    ~Project() {};
 
     void add_ignore(const std::string &ignore_dir);
 

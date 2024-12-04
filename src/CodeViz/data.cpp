@@ -60,7 +60,8 @@ int Data::file_count(const std::filesystem::path file)
     while (std::getline(file_stream, line))
     {
         int start = 0;
-        while(line[start] == ' ') start++;
+        while (line[start] == ' ')
+            start++;
         if (line.size() == 0)
         {
             FileData[relative_path].blank++;

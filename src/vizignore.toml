@@ -1,0 +1,7 @@
+# vscode config
+[ignorefiles]
+
+
+[ignoredirs]
+
+dirs = [".vscode", "build", "bin", "lib", "output"]

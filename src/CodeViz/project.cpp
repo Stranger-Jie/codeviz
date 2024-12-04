@@ -49,7 +49,7 @@ void Project::print_count()
 
     for (auto &key : FileData)
     {
-        std::cout << key.first << " code lines:"<<key.second.code;
+        std::cout << key.first << " code lines:" << key.second.code;
         std::cout << "\tblank lines:" << key.second.blank;
         std::cout << "\tcomment lines:" << key.second.comment;
         std::cout << "\ttotal lines:" << key.second.code + key.second.blank + key.second.comment << std::endl;

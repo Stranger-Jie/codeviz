@@ -8,18 +8,18 @@
 
 class File
 {
-
 public:
     int blank = 0;
     int code = 0;
     int comment = 0;
+
 public:
     std::string path;
     File(const std::string &path)
     {
         this->path = path;
     };
-    File(){};
+    File() {};
     ~File() {};
 };
 

@@ -2,15 +2,17 @@
 #include <string>
 #include "CodeViz/project.h"
 #include "CodeViz/data.h"
+#include "vizignore.cpp"
 
-int main(){
+int main()
+{
 
     std::string path;
     std::cin >> path;
 
     Project *p = new Project(path);
 
-    p->add_ignore("build");
+    vizignore(p);
 
     p->code_count();
 
